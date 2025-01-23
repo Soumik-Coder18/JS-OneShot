@@ -19,4 +19,4 @@ let isLogged = true
 
 console.log(typeof name);
 console.log(typeof age);
-
+console.table([typeof name ,typeof age,typeof isLogged])
