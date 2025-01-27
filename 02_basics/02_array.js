@@ -27,4 +27,5 @@ const score1 = 100
 const score2 = 200
 const score3 = 300
 
-console.log(Array.of(score1,score2,score3,frd1,frd2));//combine all things in a single array
+console.log(Array.of(score1,score2,score3,frd1,frd2));//combine all things in a single array 
+
