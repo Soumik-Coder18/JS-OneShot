@@ -13,7 +13,7 @@ handleObject({
 
 // Array
 
-const myArray = [01,10,20,04]
+const myArray = [1,10,20,4]
 function func(arrayfunc){
     return arrayfunc[2] //Index of the array
 }
