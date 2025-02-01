@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Soumik-Code</title>
+</head>
+<body class="parent" style="border-color: yellow;background-color: black;color: aliceblue;">
+     
+</body>
+<script>
+    const div = document.createElement('div')
+    console.log(div);
+    div.className="main"
+    div.id= Math.floor (Math.random()*10+1)
+    div.setAttribute("title","Soumik")
+    div.style.backgroundColor= "green"
+    div.style.padding= "12px "
+    // div.innerText= "Hello guys " //it is used to overwrite
+    const addText = document.createTextNode("Hello guys!!")
+    div.appendChild(addText )
+     document.body.appendChild(div)
+</script>
+</html>
