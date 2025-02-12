@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <ul id="images">
+        <li><img height="400px" id="Krishna" src="https://i.pinimg.com/736x/e1/7f/41/e17f419fa4f8a9cffaee5815b21896d4.jpg" alt="Krishna"></li>
+        <li><img height="400px" id="radha" src="https://i.pinimg.com/736x/1e/62/ca/1e62caf546b31ad64feca083b09432a9.jpg" alt="Radha"></li>
+        <li><img height="400px" id="Both" src="https://i.pinimg.com/736x/56/f8/b8/56f8b8202a3af87b8dcdc775e0faa47c.jpg" alt="Both"></li>
+        <li><a href="https://pin.it/5CBRuYd0j" id="Soumik">Soumik's Pinterest</a></li>
+    </ul>
+</body>
+<script>
+    document.getElementById('Krishna').onclick=function(){
+        alert("Hare Krishna")
+    }
+    document.getElementById("radha").addEventListener("click",function(){
+        alert("Radhe Radhe")
+    },false)
+
+        // attachEvent()
+    // jQuery - on
+
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("clicked inside the ul");
+    // }, false)
+
+    // document.getElementById('Krishna').addEventListener('click', function(e){
+    //     console.log("Krishna clicked");
+    //     e.stopPropagation()
+    // }, false)
+    
+    // document.getElementById('Soumik').addEventListener('click',function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation()
+    //     console.log("Soumik clicked");
+    // }, false)
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        if (e.target.tagName==='IMG') {
+            let removeIt= e.target.parentNode;
+            removeIt.remove();
+        }
+    })
+</script>
+</html>
