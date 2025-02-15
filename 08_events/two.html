@@ -9,4 +9,25 @@
     <h1>Good Morning</h1>
     <button id="stop">Stop</button>
 </body>
+<script>
+    // setTimeout(function(){
+    //     console.log("Soumik");
+    // },4000)
+
+    // const myName = function(){
+    //     console.log("Akash");
+    // }
+    // setTimeout(myName,5000)
+
+    const changeText = function(){
+        document.querySelector('h1').innerHTML="Good Night"
+        console.log("Already Changed");
+    }
+    const changed = setTimeout(changeText,4000)
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(changed)
+        console.log("Stopped");
+    })
+</script>
 </html>
